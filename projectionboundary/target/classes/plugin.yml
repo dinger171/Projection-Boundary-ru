@@ -1,0 +1,6 @@
+name: ProjectionBoundary
+version: 1.0
+main: com.example.projectionboundary.ProjectionBoundary
+api-version: 1.21
+author: Klimnt_led
+description: Граница сбоя мира. Проекция нестабильна.

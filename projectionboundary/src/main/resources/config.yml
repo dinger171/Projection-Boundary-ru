@@ -1,0 +1,6 @@
+boundary:
+  warning: 24700
+  glitch: 24900
+  reset: 25000
+
+messageCooldownTicks: 2000
