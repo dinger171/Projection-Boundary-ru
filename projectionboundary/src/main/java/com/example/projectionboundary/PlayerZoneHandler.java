@@ -55,7 +55,7 @@ public class PlayerZoneHandler implements Listener {
         player.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 100, 0));
 
         if (canSendMessage(player)) {
-            player.sendMessage(ChatColor.GRAY + "*Субъект выходит.*");
+            player.sendMessage(ChatColor.GRAY + "*Вы приближаетесь к краю. Здесь нет надзора.*");
             player.getWorld().playSound(player.getLocation(), Sound.BLOCK_PORTAL_TRIGGER, 1f, 0.8f);
         }
     }
@@ -69,14 +69,14 @@ public class PlayerZoneHandler implements Listener {
         }
 
         if (canSendMessage(player)) {
-            player.sendMessage(ChatColor.RED + "*информация прерывеста, продолжение не рекомендовоно.*");
+            player.sendMessage(ChatColor.RED + "*Данные нестабильны. Рекомендуется вернутся*");
             player.getWorld().playSound(player.getLocation(), Sound.ENTITY_ELDER_GUARDIAN_CURSE, 1f, 0.5f);
         }
     }
 
     private void handleReset(Player player) {
         player.getInventory().clear();
-        player.sendMessage(ChatColor.DARK_RED + "*Субъект не найден, перезагрузка.*");
+        player.sendMessage(ChatColor.DARK_RED + "*Субъект потерен. Проекция завершена.*");
 
         World world = player.getWorld();
         Random rand = new Random();
